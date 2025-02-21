@@ -7,9 +7,10 @@ EXTRA_CFLAGS:= -DCODER_ID=$(CODER_ID)
 
 TARGET:=hml087
 #get it from https://github.com/cnlohr/ch32v003fun
-CH32V003FUN:=../ch32v003fun/ch32v003fun
+TARGET_MCU?=CH32V003
+CH32V003FUN:=../ch32fun/ch32fun
 
-include ../ch32v003fun/ch32v003fun/ch32v003fun.mk
+include ../ch32fun/ch32fun/ch32fun.mk
 
 flash : cv_flash
 clean : cv_clean

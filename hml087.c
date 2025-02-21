@@ -1,4 +1,4 @@
-#include "ch32v003fun.h"
+#include "ch32fun.h"
 
 //select the coder DATA table
 #if CODER_ID == 1377368
